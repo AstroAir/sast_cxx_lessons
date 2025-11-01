@@ -7,8 +7,8 @@
 3. [变量和运算符](#第3章-变量和运算符)
 4. [字符串](#第4章-字符串处理)
 5. [控制流](#第5章-控制流)
-6. [数组和集合](#第6章-数组和集合)
-7. [函数](#第7章-函数)
+6. [函数](#第6章-函数)
+7. [数组和集合](#第7章-数组和集合)
 8. [引用](#第8章-引用)
 9. [指针](#第9章-指针简介)
 10. [类和对象](#第10章-类和对象简介)
@@ -767,7 +767,7 @@ int main() {
 - ⚠️ 使用`const`关键字声明不会改变的值
 - ⚠️ 选择有意义的变量名，让代码自解释
 
-### 2.2 变量作用域
+### 3.2 变量作用域
 
 变量的作用域（scope）决定了变量在程序中的可见性和生命周期。理解作用域对于编写正确的程序至关重要。
 
@@ -949,11 +949,11 @@ int main() {
 - **静态局部变量**：第一次调用时创建，程序结束时销毁，保持值不变
 - **全局变量**：程序开始时创建，程序结束时销毁
 
-### 2.3 运算符
+### 3.3 运算符
 
 运算符是用于执行特定操作的符号。C++提供了丰富的运算符，包括算术、比较、逻辑、赋值等多种类型。
 
-#### 2.3.1 算术运算符
+#### 3.3.1 算术运算符
 
 算术运算符用于执行基本的数学运算。
 
@@ -1036,7 +1036,7 @@ num /= 4: 6
 num %= 4: 2
 ```
 
-#### 2.3.2 比较运算符
+#### 3.3.2 比较运算符
 
 比较运算符用于比较两个值，返回布尔值（true或false）。
 
@@ -1090,7 +1090,7 @@ x == y: false
 x < y: true
 ```
 
-#### 2.3.3 逻辑运算符
+#### 3.3.3 逻辑运算符
 
 逻辑运算符用于组合多个条件表达式。
 
@@ -1342,7 +1342,7 @@ int main() {
 
 条件语句允许程序根据条件的真假来选择不同的执行路径。
 
-#### 3.1.1 if语句
+#### 5.1.1 if语句
 
 最基本的条件语句，当条件为真时执行代码块。
 
@@ -1398,7 +1398,7 @@ int main() {
 成年人（单行）
 ```
 
-#### 3.1.2 if-else语句
+#### 5.1.2 if-else语句
 
 提供两个执行路径：条件为真时执行一个，为假时执行另一个。
 
@@ -1468,7 +1468,7 @@ int main() {
 青少年
 ```
 
-#### 3.1.3 三元运算符
+#### 5.1.3 三元运算符
 
 三元运算符是if-else的简洁形式：`条件 ? 值1 : 值2`
 
@@ -1517,7 +1517,7 @@ int main() {
 数字 10 是偶数
 ```
 
-#### 3.1.4 switch语句
+#### 5.1.4 switch语句
 
 switch语句用于多路分支，比多个if-else更清晰。
 
@@ -1656,11 +1656,11 @@ int main() {
 - 使用switch：当比较的是离散的、确定的值（如1, 2, 3或'A', 'B', 'C'）
 - 使用if-else：当需要范围判断或复杂条件时
 
-### 3.2 循环
+### 5.2 循环
 
 循环允许程序重复执行一段代码，直到满足某个条件。C++提供了多种循环结构。
 
-#### 3.2.1 for循环
+#### 5.2.1 for循环
 
 for循环是最常用的循环，适合已知循环次数的情况。
 
@@ -1745,7 +1745,7 @@ int main() {
 多变量循环: (0,10) (1,9) (2,8) (3,7) (4,6)
 ```
 
-#### 3.2.2 while循环
+#### 5.2.2 while循环
 
 while循环在条件为真时重复执行，适合不知道确切循环次数的情况。
 
@@ -1825,7 +1825,7 @@ int main() {
 5的阶乘是: 120
 ```
 
-#### 3.2.3 do-while循环
+#### 5.2.3 do-while循环
 
 do-while循环至少执行一次，然后检查条件。
 
@@ -1939,7 +1939,7 @@ while循环体没有执行
 退出程序
 ```
 
-#### 3.2.4 基于范围的for循环（C++11）
+#### 5.2.4 基于范围的for循环（C++11）
 
 现代C++提供了更简洁的遍历容器的方式。
 
@@ -2038,11 +2038,11 @@ int main() {
 | do-while | 至少执行一次 | 菜单系统 |
 | 范围for | 遍历容器 | 遍历数组、vector |
 
-### 3.3 循环控制
+### 5.3 循环控制
 
 循环控制语句允许我们改变循环的正常执行流程。
 
-#### 3.3.1 break语句
+#### 5.3.1 break语句
 
 break语句立即终止循环，跳出循环体。
 
@@ -2142,7 +2142,7 @@ int main() {
   内层循环在 j = 3 时break
 ```
 
-#### 3.3.2 continue语句
+#### 5.3.2 continue语句
 
 continue语句跳过当前迭代的剩余部分，直接进入下一次迭代。
 
@@ -2231,7 +2231,7 @@ int main() {
 6 7 8 9 10
 ```
 
-#### 3.3.3 break和continue的组合使用
+#### 5.3.3 break和continue的组合使用
 
 **完整示例 - break和continue组合：**
 
@@ -2357,11 +2357,11 @@ end_loops:
 
 ---
 
-## 第6章 数组和集合
+## 第6章 函数
 
-数组和集合是存储多个相同类型数据的容器。C++提供了传统的C风格数组和现代的STL容器（如vector）。
+函数是C++程序的基本构建块。它们允许我们将代码组织成可重用的模块，使程序更易于理解、测试和维护。
 
-### 6.1 C风格数组
+### 6.1 函数基础
 
 函数是执行特定任务的命名代码块。函数可以接收输入（参数），执行操作，并返回结果。
 
@@ -2580,7 +2580,7 @@ int main() {
 - ✅ 避免副作用（除非函数的目的就是产生副作用）
 - ✅ 使用有意义的参数名
 
-### 4.2 无返回值的函数
+### 6.2 无返回值的函数
 
 void函数不返回值，用于执行操作而不产生结果。
 
@@ -2644,7 +2644,7 @@ int main() {
 }
 ```
 
-### 4.3 函数参数传递
+### 6.3 函数参数传递
 
 C++有三种参数传递方式：按值传递、按引用传递和按指针传递。
 
@@ -2750,7 +2750,7 @@ const引用传递:
 交换后: x = 20, y = 10
 ```
 
-### 4.4 函数重载
+### 6.4 函数重载
 
 函数重载允许多个函数使用相同的名称，但参数列表不同。
 
@@ -2849,7 +2849,7 @@ print函数重载:
 - ❌ 仅返回类型不同（不允许）
 - ❌ 仅参数名不同（不允许）
 
-### 4.5 默认参数
+### 6.5 默认参数
 
 默认参数允许函数在调用时省略某些参数。
 
@@ -2960,11 +2960,11 @@ void func1(int a, int b = 10, int c = 20);
 
 ---
 
-## 第7章 函数
+## 第7章 数组和集合
 
-函数是C++程序的基本构建块。它们允许我们将代码组织成可重用的模块，使程序更易于理解、测试和维护。
+数组和集合是存储多个相同类型数据的容器。C++提供了传统的C风格数组和现代的STL容器（如vector）。
 
-### 7.1 函数基础
+### 7.1 C风格数组
 
 数组是存储固定数量相同类型元素的连续内存块。
 
@@ -3021,7 +3021,7 @@ int main() {
 - ⚠️ 访问超出范围的索引会导致未定义行为
 - ⚠️ 数组大小必须是编译时常量
 
-### 5.2 数组初始化
+### 7.2 数组初始化
 
 **完整示例 - 数组初始化方式：**
 
@@ -3076,7 +3076,7 @@ int main() {
 }
 ```
 
-### 5.3 遍历数组
+### 7.3 遍历数组
 
 **完整示例 - 数组遍历方法：**
 
@@ -3124,7 +3124,7 @@ int main() {
 }
 ```
 
-### 5.4 多维数组
+### 7.4 多维数组
 
 **完整示例 - 二维数组：**
 
@@ -3177,7 +3177,7 @@ int main() {
 }
 ```
 
-### 5.5 向量（动态数组）
+### 7.5 向量（动态数组）
 
 vector是C++标准库提供的动态数组，大小可以在运行时改变。
 
@@ -3402,21 +3402,290 @@ int main() {
 
 ### 9.1 什么是指针？
 
-类是创建对象的蓝图或模板。它定义了对象将拥有什么数据（成员变量/属性）和行为（成员函数/方法）。
+指针是存储内存地址的变量。它允许我们通过地址间接访问或修改对象。
 
-**类的比喻：**
+常用概念：
+- &（取地址）获取变量的地址
+- *（解引用）访问指针指向的值
+- nullptr 表示空指针
 
-- **类**是饼干模具（蓝图/设计图）
-- **对象**是饼干（从蓝图创建的实际实例）
-- 一个模具可以制作多个饼干，一个类可以创建多个对象
+### 9.2 指针语法
 
-**类的组成部分：**
+**完整示例 - 指针声明和使用：**
 
-1. **成员变量（属性）**：存储对象的状态/数据
-2. **成员函数（方法）**：定义对象的行为/操作
-3. **访问修饰符**：控制成员的访问权限（public, private, protected）
+```cpp
+#include <iostream>
 
-### 6.2 简单的类示例
+int main() {
+    std::cout << "=== 指针语法示例 ===" << std::endl;
+
+    int x = 10;
+    int y = 20;
+
+    // 声明并初始化指针
+    int* ptr1 = &x;  // ptr1 指向 x
+    int* ptr2 = &y;  // ptr2 指向 y
+
+    std::cout << "ptr1 指向的值: " << *ptr1 << std::endl;
+    std::cout << "ptr2 指向的值: " << *ptr2 << std::endl;
+
+    // 改变指针指向
+    ptr1 = &y;  // 现在 ptr1 也指向 y
+    std::cout << "\nptr1 改变指向后: " << *ptr1 << std::endl;
+
+    // 通过指针修改值
+    *ptr2 = 30;
+    std::cout << "修改 *ptr2 后, y = " << y << std::endl;
+
+    // 空指针
+    int* ptr3 = nullptr;  // C++11推荐使用nullptr
+    // int* ptr4 = NULL;   // 旧式写法
+    // int* ptr5 = 0;      // 更旧的写法
+
+    if (ptr3 == nullptr) {
+        std::cout << "\nptr3 是空指针" << std::endl;
+    }
+
+    // 指针算术
+    int arr[] = {1, 2, 3, 4, 5};
+    int* p = arr;  // 数组名是指向第一个元素的指针
+
+    std::cout << "\n指针算术:" << std::endl;
+    std::cout << "*p = " << *p << std::endl;       // 1
+    std::cout << "*(p+1) = " << *(p+1) << std::endl;  // 2
+    std::cout << "*(p+2) = " << *(p+2) << std::endl;  // 3
+
+    return 0;
+}
+```
+
+**预期输出：**
+
+```
+=== 指针语法示例 ===
+ptr1 指向的值: 10
+ptr2 指向的值: 20
+
+ptr1 改变指向后: 20
+修改 *ptr2 后, y = 30
+
+ptr3 是空指针
+
+指针算术:
+*p = 1
+*(p+1) = 2
+*(p+2) = 3
+```
+
+**关键概念：**
+
+- `&` = 取地址运算符（"地址是多少？"）
+- `*` = 解引用运算符（"地址处的值是什么？"）
+- `int* ptr` = "ptr是指向int的指针"
+
+
+### 9.3 指针与数组
+
+数组名本质上是指向第一个元素的指针。
+
+**完整示例 - 指针与数组：**
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "=== 指针与数组示例 ===" << std::endl;
+
+    int numbers[5] = {10, 20, 30, 40, 50};
+
+    // 数组名是指向第一个元素的指针
+    int* ptr = numbers;  // 等价于 int* ptr = &numbers[0];
+
+    std::cout << "使用指针访问数组元素:" << std::endl;
+    std::cout << "*ptr = " << *ptr << std::endl;           // 10
+    std::cout << "*(ptr+1) = " << *(ptr+1) << std::endl;   // 20
+    std::cout << "*(ptr+2) = " << *(ptr+2) << std::endl;   // 30
+
+    // 指针算术
+    std::cout << "\n指针算术:" << std::endl;
+    std::cout << "ptr指向: " << *ptr << std::endl;  // 10
+    ptr++;  // 移动到下一个元素
+    std::cout << "ptr++后指向: " << *ptr << std::endl;  // 20
+    ptr += 2;  // 再移动两个元素
+    std::cout << "ptr+=2后指向: " << *ptr << std::endl;  // 40
+
+    // 使用指针遍历数组
+    std::cout << "\n使用指针遍历数组: ";
+    ptr = numbers;  // 重置指针
+    for (int i = 0; i < 5; i++) {
+        std::cout << *(ptr + i) << " ";
+    }
+    std::cout << std::endl;
+
+    // 数组下标实际上是指针运算
+    std::cout << "\nnumbers[2] = " << numbers[2] << std::endl;
+    std::cout << "*(numbers+2) = " << *(numbers+2) << std::endl;
+    std::cout << "两者相同！" << std::endl;
+
+    return 0;
+}
+```
+
+### 9.4 指向对象的指针
+
+**完整示例 - 指向对象的指针：**
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Person {
+public:
+    std::string name;
+    int age;
+
+    void greet() {
+        std::cout << "你好，我是 " << name << "，今年 " << age << " 岁" << std::endl;
+    }
+
+    void celebrateBirthday() {
+        age++;
+        std::cout << name << " 过生日了！现在 " << age << " 岁" << std::endl;
+    }
+};
+
+int main() {
+    std::cout << "=== 指向对象的指针示例 ===" << std::endl;
+
+    Person person;
+    person.name = "Alice";
+    person.age = 25;
+
+    // 创建指向对象的指针
+    Person* ptr = &person;
+
+    // 两种访问成员的方式
+    std::cout << "使用点运算符: " << person.name << std::endl;
+    std::cout << "使用箭头运算符: " << ptr->name << std::endl;
+
+    // 通过指针调用方法
+    ptr->greet();
+    ptr->celebrateBirthday();
+
+    // (*ptr).name 等价于 ptr->name
+    std::cout << "\n(*ptr).age = " << (*ptr).age << std::endl;
+    std::cout << "ptr->age = " << ptr->age << std::endl;
+
+    return 0;
+}
+```
+
+**预期输出：**
+
+```
+=== 指向对象的指针示例 ===
+使用点运算符: Alice
+使用箭头运算符: Alice
+你好，我是 Alice，今年 25 岁
+Alice 过生日了！现在 26 岁
+
+(*ptr).age = 26
+ptr->age = 26
+```
+
+### 9.5 常见指针错误
+
+**完整示例 - 指针错误和最佳实践：**
+
+```cpp
+#include <iostream>
+
+// 错误示例1：未初始化的指针
+void uninitializedPointerExample() {
+    // int* ptr;  // 危险！指向随机内存
+    // *ptr = 10;  // 未定义行为，可能崩溃
+
+    // 正确做法
+    int* ptr = nullptr;
+    if (ptr != nullptr) {
+        *ptr = 10;
+    } else {
+        std::cout << "指针为空，不能解引用" << std::endl;
+    }
+}
+
+// 错误示例2：悬空指针
+int* getDanglingPointer() {
+    int x = 42;
+    return &x;  // 危险！x在函数结束时被销毁
+}
+
+// 正确做法：返回值而不是指针
+int getValue() {
+    int x = 42;
+    return x;
+}
+
+// 错误示例3：空指针解引用
+void nullPointerExample() {
+    int* ptr = nullptr;
+
+    // 错误：解引用空指针
+    // std::cout << *ptr << std::endl;  // 崩溃！
+
+    // 正确：先检查
+    if (ptr != nullptr) {
+        std::cout << *ptr << std::endl;
+    } else {
+        std::cout << "指针为空" << std::endl;
+    }
+}
+
+int main() {
+    std::cout << "=== 指针错误示例 ===" << std::endl;
+
+    uninitializedPointerExample();
+    nullPointerExample();
+
+    // 使用正确的函数
+    int value = getValue();
+    std::cout << "正确获取的值: " << value << std::endl;
+
+    return 0;
+}
+```
+
+**指针最佳实践：**
+
+- ✅ 总是初始化指针（使用nullptr或有效地址）
+- ✅ 使用前检查指针是否为nullptr
+- ✅ 避免返回局部变量的地址
+- ✅ 使用智能指针（std::unique_ptr, std::shared_ptr）代替原始指针
+- ❌ 不要解引用空指针
+- ❌ 不要使用未初始化的指针
+
+---
+
+## 第10章 类和对象简介
+
+面向对象编程（OOP）是C++的核心特性之一。类和对象允许将数据与操作绑定在一起，支持抽象、封装、继承和多态。
+
+### 10.1 什么是类？
+
+类是创建对象的蓝图或模板。它定义了对象将拥有什么数据（成员变量/属性）和行为（成员函数/方法）。对象是类的具体实例。
+
+**简短示例：**
+
+```cpp
+class Point {
+public:
+    int x, y;
+    Point(int x, int y): x(x), y(y) {}
+    void move(int dx, int dy) { x += dx; y += dy; }
+};
+```
+
+### 10.2 简单的类示例
 
 **完整示例 - 基本类定义和使用：**
 
@@ -3620,7 +3889,7 @@ int main() {
 余额: 1200 元
 ```
 
-### 6.3 访问修饰符
+### 10.3 访问修饰符
 
 访问修饰符控制类成员的可见性和访问权限，是封装的关键。
 
@@ -3712,7 +3981,7 @@ int main() {
 
 **最佳实践**：保持数据private，提供public函数访问。这称为**封装**。
 
-### 6.4 构造函数和析构函数简介
+### 10.4 构造函数和析构函数简介
 
 构造函数在创建对象时自动调用，用于初始化对象。析构函数在对象销毁时自动调用，用于清理资源。
 
@@ -3796,1237 +4065,35 @@ int main() {
 
 ---
 
-## 第10章 类和对象简介
-
-面向对象编程（OOP）是C++的核心特性之一。类和对象是OOP的基础，它们允许我们将数据和操作数据的函数组织在一起。
-
-### 10.1 什么是类？
-
-指针是一个存储内存地址的变量。可以把它想象成：
-
-- **变量**是一个房子（存储数据）
-- **指针**是房子的地址（告诉你房子在哪里）
-
-**完整示例 - 指针基础：**
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "=== 指针基础示例 ===" << std::endl;
-
-    int x = 42;
-
-    std::cout << "变量 x 的值: " << x << std::endl;
-    std::cout << "变量 x 的地址: " << &x << std::endl;
-
-    // 创建指向x的指针
-    int* ptr = &x;  // & 是取地址运算符
-
-    std::cout << "\n指针 ptr 存储的地址: " << ptr << std::endl;
-    std::cout << "指针 ptr 指向的值: " << *ptr << std::endl;  // * 是解引用运算符
-
-    // 通过指针修改值
-    *ptr = 100;
-    std::cout << "\n通过指针修改后:" << std::endl;
-    std::cout << "x 的值: " << x << std::endl;
-    std::cout << "*ptr 的值: " << *ptr << std::endl;
-
-    // 指针本身也有地址
-    std::cout << "\n指针 ptr 本身的地址: " << &ptr << std::endl;
-
-    return 0;
-}
-```
-
-**预期输出（地址会变化）：**
-
-```
-=== 指针基础示例 ===
-变量 x 的值: 42
-变量 x 的地址: 0x7ffc8b7c4a44
-
-指针 ptr 存储的地址: 0x7ffc8b7c4a44
-指针 ptr 指向的值: 42
-
-通过指针修改后:
-x 的值: 100
-*ptr 的值: 100
-
-指针 ptr 本身的地址: 0x7ffc8b7c4a48
-```
-
-### 7.2 指针语法
-
-**完整示例 - 指针声明和使用：**
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "=== 指针语法示例 ===" << std::endl;
-
-    int x = 10;
-    int y = 20;
-
-    // 声明并初始化指针
-    int* ptr1 = &x;  // ptr1 指向 x
-    int* ptr2 = &y;  // ptr2 指向 y
-
-    std::cout << "ptr1 指向的值: " << *ptr1 << std::endl;
-    std::cout << "ptr2 指向的值: " << *ptr2 << std::endl;
-
-    // 改变指针指向
-    ptr1 = &y;  // 现在 ptr1 也指向 y
-    std::cout << "\nptr1 改变指向后: " << *ptr1 << std::endl;
-
-    // 通过指针修改值
-    *ptr2 = 30;
-    std::cout << "修改 *ptr2 后, y = " << y << std::endl;
-
-    // 空指针
-    int* ptr3 = nullptr;  // C++11推荐使用nullptr
-    // int* ptr4 = NULL;   // 旧式写法
-    // int* ptr5 = 0;      // 更旧的写法
-
-    if (ptr3 == nullptr) {
-        std::cout << "\nptr3 是空指针" << std::endl;
-    }
-
-    // 指针算术
-    int arr[] = {1, 2, 3, 4, 5};
-    int* p = arr;  // 数组名是指向第一个元素的指针
-
-    std::cout << "\n指针算术:" << std::endl;
-    std::cout << "*p = " << *p << std::endl;       // 1
-    std::cout << "*(p+1) = " << *(p+1) << std::endl;  // 2
-    std::cout << "*(p+2) = " << *(p+2) << std::endl;  // 3
-
-    return 0;
-}
-```
-
-**预期输出：**
-
-```
-=== 指针语法示例 ===
-ptr1 指向的值: 10
-ptr2 指向的值: 20
-
-ptr1 改变指向后: 20
-修改 *ptr2 后, y = 30
-
-ptr3 是空指针
-
-指针算术:
-*p = 1
-*(p+1) = 2
-*(p+2) = 3
-```
-
-// 通过指针修改
-*ptr = 20;  // x现在是20
-
-```
-
-**关键概念：**
-
-- `&` = 取地址运算符（"地址是多少？"）
-- `*` = 解引用运算符（"地址处的值是什么？"）
-- `int* ptr` = "ptr是指向int的指针"
-
-### 7.3 指针与数组
-
-数组名本质上是指向第一个元素的指针。
-
-**完整示例 - 指针与数组：**
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "=== 指针与数组示例 ===" << std::endl;
-
-    int numbers[5] = {10, 20, 30, 40, 50};
-
-    // 数组名是指向第一个元素的指针
-    int* ptr = numbers;  // 等价于 int* ptr = &numbers[0];
-
-    std::cout << "使用指针访问数组元素:" << std::endl;
-    std::cout << "*ptr = " << *ptr << std::endl;           // 10
-    std::cout << "*(ptr+1) = " << *(ptr+1) << std::endl;   // 20
-    std::cout << "*(ptr+2) = " << *(ptr+2) << std::endl;   // 30
-
-    // 指针算术
-    std::cout << "\n指针算术:" << std::endl;
-    std::cout << "ptr指向: " << *ptr << std::endl;  // 10
-    ptr++;  // 移动到下一个元素
-    std::cout << "ptr++后指向: " << *ptr << std::endl;  // 20
-    ptr += 2;  // 再移动两个元素
-    std::cout << "ptr+=2后指向: " << *ptr << std::endl;  // 40
-
-    // 使用指针遍历数组
-    std::cout << "\n使用指针遍历数组: ";
-    ptr = numbers;  // 重置指针
-    for (int i = 0; i < 5; i++) {
-        std::cout << *(ptr + i) << " ";
-    }
-    std::cout << std::endl;
-
-    // 数组下标实际上是指针运算
-    std::cout << "\nnumbers[2] = " << numbers[2] << std::endl;
-    std::cout << "*(numbers+2) = " << *(numbers+2) << std::endl;
-    std::cout << "两者相同！" << std::endl;
-
-    return 0;
-}
-```
-
-### 7.4 指向对象的指针
-
-**完整示例 - 指向对象的指针：**
-
-```cpp
-#include <iostream>
-#include <string>
-
-class Person {
-public:
-    std::string name;
-    int age;
-
-    void greet() {
-        std::cout << "你好，我是 " << name << "，今年 " << age << " 岁" << std::endl;
-    }
-
-    void celebrateBirthday() {
-        age++;
-        std::cout << name << " 过生日了！现在 " << age << " 岁" << std::endl;
-    }
-};
-
-int main() {
-    std::cout << "=== 指向对象的指针示例 ===" << std::endl;
-
-    Person person;
-    person.name = "Alice";
-    person.age = 25;
-
-    // 创建指向对象的指针
-    Person* ptr = &person;
-
-    // 两种访问成员的方式
-    std::cout << "使用点运算符: " << person.name << std::endl;
-    std::cout << "使用箭头运算符: " << ptr->name << std::endl;
-
-    // 通过指针调用方法
-    ptr->greet();
-    ptr->celebrateBirthday();
-
-    // (*ptr).name 等价于 ptr->name
-    std::cout << "\n(*ptr).age = " << (*ptr).age << std::endl;
-    std::cout << "ptr->age = " << ptr->age << std::endl;
-
-    return 0;
-}
-```
-
-**预期输出：**
-
-```
-=== 指向对象的指针示例 ===
-使用点运算符: Alice
-使用箭头运算符: Alice
-你好，我是 Alice，今年 25 岁
-Alice 过生日了！现在 26 岁
-
-(*ptr).age = 26
-ptr->age = 26
-```
-
-### 7.5 常见指针错误
-
-**完整示例 - 指针错误和最佳实践：**
-
-```cpp
-#include <iostream>
-
-// 错误示例1：未初始化的指针
-void uninitializedPointerExample() {
-    // int* ptr;  // 危险！指向随机内存
-    // *ptr = 10;  // 未定义行为，可能崩溃
-
-    // 正确做法
-    int* ptr = nullptr;
-    if (ptr != nullptr) {
-        *ptr = 10;
-    } else {
-        std::cout << "指针为空，不能解引用" << std::endl;
-    }
-}
-
-// 错误示例2：悬空指针
-int* getDanglingPointer() {
-    int x = 42;
-    return &x;  // 危险！x在函数结束时被销毁
-}
-
-// 正确做法：返回值而不是指针
-int getValue() {
-    int x = 42;
-    return x;
-}
-
-// 错误示例3：空指针解引用
-void nullPointerExample() {
-    int* ptr = nullptr;
-
-    // 错误：解引用空指针
-    // std::cout << *ptr << std::endl;  // 崩溃！
-
-    // 正确：先检查
-    if (ptr != nullptr) {
-        std::cout << *ptr << std::endl;
-    } else {
-        std::cout << "指针为空" << std::endl;
-    }
-}
-
-int main() {
-    std::cout << "=== 指针错误示例 ===" << std::endl;
-
-    uninitializedPointerExample();
-    nullPointerExample();
-
-    // 使用正确的函数
-    int value = getValue();
-    std::cout << "正确获取的值: " << value << std::endl;
-
-    return 0;
-}
-```
-
-**指针最佳实践：**
-
-- ✅ 总是初始化指针（使用nullptr或有效地址）
-- ✅ 使用前检查指针是否为nullptr
-- ✅ 避免返回局部变量的地址
-- ✅ 使用智能指针（std::unique_ptr, std::shared_ptr）代替原始指针
-- ❌ 不要解引用空指针
-- ❌ 不要使用未初始化的指针
-
----
-
 ## 第11章 构造函数和析构函数
 
 构造函数和析构函数是类的特殊成员函数，用于对象的初始化和清理。
 
 ### 11.1 构造函数
 
-C风格字符串是**以空字符('\0')结尾的字符数组**。
+构造函数是在创建对象时自动调用的特殊成员函数，用于初始化对象的状态；析构函数在对象生命周期结束时自动调用，用于清理资源。
 
-**完整示例 - C风格字符串：**
-
-```cpp
-#include <iostream>
-#include <cstring>  // C字符串函数
-
-int main() {
-    std::cout << "=== C风格字符串示例 ===" << std::endl;
-
-    // 创建C风格字符串的几种方式
-    char str1[] = "Hello";  // 编译器自动添加'\0'
-    char str2[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
-    const char* str3 = "World";  // 字符串字面量
-
-    std::cout << "str1: " << str1 << std::endl;
-    std::cout << "str2: " << str2 << std::endl;
-    std::cout << "str3: " << str3 << std::endl;
-
-    // 字符串长度
-    std::cout << "\nstrlen(str1) = " << strlen(str1) << std::endl;
-    std::cout << "sizeof(str1) = " << sizeof(str1) << std::endl;  // 包括'\0'
-
-    // 字符串复制
-    char destination[20];
-    strcpy(destination, str1);
-    std::cout << "\n复制后: " << destination << std::endl;
-
-    // 字符串连接
-    strcat(destination, " ");
-    strcat(destination, str3);
-    std::cout << "连接后: " << destination << std::endl;
-
-    // 字符串比较
-    char str4[] = "Hello";
-    char str5[] = "World";
-
-    if (strcmp(str1, str4) == 0) {
-        std::cout << "\nstr1 和 str4 相同" << std::endl;
-    }
-
-    if (strcmp(str1, str5) < 0) {
-        std::cout << "str1 在字典序中小于 str5" << std::endl;
-    }
-
-    return 0;
-}
-```
-
-**预期输出：**
-
-```
-=== C风格字符串示例 ===
-str1: Hello
-str2: Hello
-str3: World
-
-strlen(str1) = 5
-sizeof(str1) = 6
-
-复制后: Hello
-连接后: Hello World
-
-str1 和 str4 相同
-str1 在字典序中小于 str5
-```
-
-### 8.2 std::string（推荐）
-
-std::string是C++标准库提供的字符串类，比C风格字符串更安全、更易用。
-
-**完整示例 - std::string基础：**
+**完整示例 - 构造函数基本用法：**
 
 ```cpp
 #include <iostream>
-#include <string>
 
-int main() {
-    std::cout << "=== std::string示例 ===" << std::endl;
-
-    // 创建字符串
-    std::string str1 = "Hello";
-    std::string str2("World");
-    std::string str3(5, '*');  // "*****"
-
-    std::cout << "str1: " << str1 << std::endl;
-    std::cout << "str2: " << str2 << std::endl;
-    std::cout << "str3: " << str3 << std::endl;
-
-    // 字符串连接
-    std::string result = str1 + " " + str2;
-    std::cout << "\n连接: " << result << std::endl;
-
-    // 字符串长度
-    std::cout << "长度: " << str1.length() << std::endl;
-    std::cout << "大小: " << str1.size() << std::endl;  // 与length()相同
-    std::cout << "是否为空: " << (str1.empty() ? "是" : "否") << std::endl;
-
-    // 访问字符
-    std::cout << "\n第一个字符: " << str1[0] << std::endl;
-    std::cout << "最后一个字符: " << str1[str1.length()-1] << std::endl;
-    std::cout << "使用at(): " << str1.at(1) << std::endl;
-
-    // 修改字符串
-    str1[0] = 'h';
-    std::cout << "\n修改后: " << str1 << std::endl;
-
-    // 追加
-    str1 += "!";
-    str1.append(" C++");
-    std::cout << "追加后: " << str1 << std::endl;
-
-    // 子字符串
-    std::string original = "Hello World";
-    std::string sub = original.substr(0, 5);  // 从位置0开始，长度5
-    std::cout << "\n子字符串: " << sub << std::endl;
-
-    // 查找
-    size_t pos = original.find("World");
-    if (pos != std::string::npos) {
-        std::cout << "'World' 在位置 " << pos << std::endl;
-    }
-
-    // 替换
-    std::string text = "Hello World";
-    text.replace(6, 5, "C++");  // 从位置6开始，替换5个字符
-    std::cout << "替换后: " << text << std::endl;
-
-    // 比较
-    std::string s1 = "apple";
-    std::string s2 = "banana";
-    if (s1 < s2) {
-        std::cout << "\n" << s1 << " 在字典序中小于 " << s2 << std::endl;
-    }
-
-    return 0;
-}
-```
-
-**预期输出：**
-
-```
-=== std::string示例 ===
-str1: Hello
-str2: World
-str3: *****
-
-连接: Hello World
-长度: 5
-大小: 5
-是否为空: 否
-
-第一个字符: H
-最后一个字符: o
-使用at(): e
-
-修改后: hello
-追加后: hello! C++
-
-子字符串: Hello
-'World' 在位置 6
-替换后: Hello C++
-
-apple 在字典序中小于 banana
-```
-
-**std::string vs C风格字符串：**
-
-| 特性 | std::string | C风格字符串 |
-|------|-------------|-------------|
-| 安全性 | 高（自动管理内存） | 低（易溢出） |
-| 易用性 | 高（丰富的方法） | 低（需要函数） |
-| 动态大小 | 是 | 否 |
-| 性能 | 稍慢 | 快 |
-| 推荐使用 | ✅ 是 | ❌ 否 |
-
----
-
-## 第12章 拷贝语义
-
-拷贝语义定义了对象如何被复制。理解浅拷贝和深拷贝对于管理动态内存至关重要。
-
-### 12.1 浅拷贝 vs 深拷贝
-
-**完整示例 - 基本I/O：**
-
-```cpp
-#include <iostream>
-#include <string>
-
-int main() {
-    std::cout << "=== 基本输入输出示例 ===" << std::endl;
-
-    // 基本输出
-    std::cout << "请输入你的名字: ";
-
-    // 基本输入（读取一个单词）
-    std::string name;
-    std::cin >> name;
-
-    std::cout << "你好, " << name << "!" << std::endl;
-
-    // 读取多个值
-    std::cout << "\n请输入你的年龄和城市: ";
-    int age;
-    std::string city;
-    std::cin >> age >> city;
-
-    std::cout << "你 " << age << " 岁，来自 " << city << std::endl;
-
-    // 读取整行（包括空格）
-    std::cin.ignore();  // 清除缓冲区中的换行符
-    std::cout << "\n请输入一句话: ";
-    std::string sentence;
-    std::getline(std::cin, sentence);
-
-    std::cout << "你说: " << sentence << std::endl;
-
-    return 0;
-}
-```
-
-### 9.2 格式化输出
-
-**完整示例 - 格式化输出：**
-
-```cpp
-#include <iostream>
-#include <iomanip>
-#include <string>
-
-int main() {
-    std::cout << "=== 格式化输出示例 ===" << std::endl;
-
-    double pi = 3.14159265359;
-
-    // 设置小数精度
-    std::cout << "默认: " << pi << std::endl;
-    std::cout << std::fixed << std::setprecision(2) << "2位小数: " << pi << std::endl;
-    std::cout << std::setprecision(4) << "4位小数: " << pi << std::endl;
-
-    // 设置宽度和对齐
-    std::cout << "\n设置宽度:" << std::endl;
-    std::cout << std::setw(15) << "右对齐" << std::endl;
-    std::cout << std::left << std::setw(15) << "左对齐" << std::endl;
-    std::cout << std::right;  // 恢复右对齐
-
-    // 填充字符
-    std::cout << "\n填充字符:" << std::endl;
-    std::cout << std::setfill('*') << std::setw(20) << 123 << std::endl;
-    std::cout << std::setfill(' ');  // 恢复空格填充
-
-    // 布尔值
-    std::cout << "\n布尔值:" << std::endl;
-    std::cout << "默认: " << true << std::endl;
-    std::cout << std::boolalpha << "boolalpha: " << true << std::endl;
-
-    // 进制
-    int num = 255;
-    std::cout << "\n进制表示:" << std::endl;
-    std::cout << "十进制: " << std::dec << num << std::endl;
-    std::cout << "十六进制: " << std::hex << num << std::endl;
-    std::cout << "八进制: " << std::oct << num << std::endl;
-    std::cout << std::dec;  // 恢复十进制
-
-    // 表格输出
-    std::cout << "\n表格示例:" << std::endl;
-    std::cout << std::left << std::setw(10) << "姓名"
-              << std::setw(8) << "年龄"
-              << std::setw(10) << "分数" << std::endl;
-    std::cout << std::setfill('-') << std::setw(28) << "" << std::endl;
-    std::cout << std::setfill(' ');
-    std::cout << std::setw(10) << "Alice"
-              << std::setw(8) << 20
-              << std::fixed << std::setprecision(1) << std::setw(10) << 95.5 << std::endl;
-    std::cout << std::setw(10) << "Bob"
-              << std::setw(8) << 21
-              << std::setw(10) << 88.3 << std::endl;
-
-    return 0;
-}
-```
-
-### 9.3 文件操作
-
-**完整示例 - 文件读写：**
-
-```cpp
-#include <iostream>
-#include <fstream>
-#include <string>
-
-int main() {
-    std::cout << "=== 文件操作示例 ===" << std::endl;
-
-    // 写入文件
-    std::ofstream outfile("example.txt");
-    if (outfile.is_open()) {
-        outfile << "Hello, File!" << std::endl;
-        outfile << "这是第二行" << std::endl;
-        outfile << "数字: " << 42 << std::endl;
-        outfile.close();
-        std::cout << "文件写入成功" << std::endl;
-    } else {
-        std::cout << "无法打开文件进行写入" << std::endl;
-        return 1;
-    }
-
-    // 读取文件（逐行）
-    std::cout << "\n读取文件内容:" << std::endl;
-    std::ifstream infile("example.txt");
-    if (infile.is_open()) {
-        std::string line;
-        int lineNum = 1;
-        while (std::getline(infile, line)) {
-            std::cout << "第" << lineNum++ << "行: " << line << std::endl;
-        }
-        infile.close();
-    } else {
-        std::cout << "无法打开文件进行读取" << std::endl;
-        return 1;
-    }
-
-    // 追加到文件
-    std::ofstream appendfile("example.txt", std::ios::app);
-    if (appendfile.is_open()) {
-        appendfile << "追加的内容" << std::endl;
-        appendfile.close();
-        std::cout << "\n内容已追加" << std::endl;
-    }
-
-    // 读取单词
-    std::cout << "\n逐词读取:" << std::endl;
-    std::ifstream wordfile("example.txt");
-    if (wordfile.is_open()) {
-        std::string word;
-        while (wordfile >> word) {
-            std::cout << word << " ";
-        }
-        std::cout << std::endl;
-        wordfile.close();
-    }
-
-    return 0;
-}
-```
-
-**文件操作模式：**
-
-| 模式 | 说明 |
-|------|------|
-| `std::ios::in` | 读取模式 |
-| `std::ios::out` | 写入模式 |
-| `std::ios::app` | 追加模式 |
-| `std::ios::binary` | 二进制模式 |
-| `std::ios::trunc` | 截断模式（清空文件） |
-
----
-
-## 第13章 动态内存管理
-
-动态内存管理允许程序在运行时分配和释放内存，提供了更大的灵活性。
-
-### 13.1 new和delete
-
-引用是一个变量的别名（另一个名字），它允许我们使用不同的名称访问同一块内存空间。
-
-**完整示例 - 引用基础：**
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "=== 引用基础示例 ===" << std::endl;
-
-    int original = 10;
-    int& ref = original;  // ref是original的引用（别名）
-
-    std::cout << "original = " << original << std::endl;
-    std::cout << "ref = " << ref << std::endl;
-
-    // 修改引用会影响原始变量
-    ref = 20;
-    std::cout << "\n修改ref后:" << std::endl;
-    std::cout << "original = " << original << std::endl;
-    std::cout << "ref = " << ref << std::endl;
-
-    // 修改原始变量也会影响引用
-    original = 30;
-    std::cout << "\n修改original后:" << std::endl;
-    std::cout << "original = " << original << std::endl;
-    std::cout << "ref = " << ref << std::endl;
-
-    // 地址相同
-    std::cout << "\n地址:" << std::endl;
-    std::cout << "&original = " << &original << std::endl;
-    std::cout << "&ref = " << &ref << std::endl;
-    std::cout << "地址相同！" << std::endl;
-
-    return 0;
-}
-```
-
-### 10.2 引用的关键特性
-
-**完整示例 - 引用特性：**
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "=== 引用特性示例 ===" << std::endl;
-
-    // 1. 必须初始化
-    int value = 10;
-    int& goodRef = value;  // 正确
-    // int& badRef;  // 错误！引用必须初始化
-
-    std::cout << "goodRef = " << goodRef << std::endl;
-
-    // 2. 不可重绑定
-    int alice = 25;
-    int bob = 30;
-    int& person = alice;  // person引用alice
-
-    std::cout << "\n初始:" << std::endl;
-    std::cout << "alice = " << alice << std::endl;
-    std::cout << "bob = " << bob << std::endl;
-    std::cout << "person = " << person << std::endl;
-
-    person = bob;  // 这是赋值，不是重绑定！
-    std::cout << "\nperson = bob 后:" << std::endl;
-    std::cout << "alice = " << alice << " (被修改了！)" << std::endl;
-    std::cout << "bob = " << bob << std::endl;
-    std::cout << "person = " << person << std::endl;
-
-    // 3. 没有空引用
-    int apple = 5;
-    int& fruit = apple;  // 引用必须引用一个存在的变量
-    // 不能像指针那样设置为nullptr
-
-    std::cout << "\nfruit = " << fruit << std::endl;
-
-    return 0;
-}
-```
-
-### 10.3 函数中的引用
-
-**完整示例 - 引用参数：**
-
-```cpp
-#include <iostream>
-
-// 按引用传递 - 可以修改原始变量
-void increment(int& x) {
-    x++;
-    std::cout << "  函数内: x = " << x << std::endl;
-}
-
-// 按值传递 - 不能修改原始变量
-void incrementByValue(int x) {
-    x++;
-    std::cout << "  函数内: x = " << x << std::endl;
-}
-
-// 按const引用传递 - 不能修改，但避免拷贝
-void printByConstRef(const int& x) {
-    std::cout << "  值: " << x << std::endl;
-    // x++;  // 错误！不能修改const引用
-}
-
-// 交换两个变量
-void swap(int& a, int& b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}
-
-// 返回引用（危险！）
-int& getDanglingReference() {
-    int local = 42;
-    return local;  // 危险！返回局部变量的引用
-}
-
-// 安全的引用返回
-int& getElement(int arr[], int index) {
-    return arr[index];  // 安全：数组在函数外仍然存在
-}
-
-int main() {
-    std::cout << "=== 函数中的引用示例 ===" << std::endl;
-
-    // 按引用传递
-    int num1 = 5;
-    std::cout << "按引用传递:" << std::endl;
-    std::cout << "调用前: num1 = " << num1 << std::endl;
-    increment(num1);
-    std::cout << "调用后: num1 = " << num1 << " (已修改)" << std::endl;
-
-    // 按值传递
-    int num2 = 5;
-    std::cout << "\n按值传递:" << std::endl;
-    std::cout << "调用前: num2 = " << num2 << std::endl;
-    incrementByValue(num2);
-    std::cout << "调用后: num2 = " << num2 << " (未修改)" << std::endl;
-
-    // const引用
-    int num3 = 100;
-    std::cout << "\nconst引用:" << std::endl;
-    printByConstRef(num3);
-
-    // 交换
-    int x = 10, y = 20;
-    std::cout << "\n交换前: x = " << x << ", y = " << y << std::endl;
-    swap(x, y);
-    std::cout << "交换后: x = " << x << ", y = " << y << std::endl;
-
-    // 返回引用
-    int numbers[] = {1, 2, 3, 4, 5};
-    std::cout << "\n返回引用:" << std::endl;
-    std::cout << "numbers[2] = " << numbers[2] << std::endl;
-    getElement(numbers, 2) = 99;  // 可以修改！
-    std::cout << "修改后: numbers[2] = " << numbers[2] << std::endl;
-
-    return 0;
-}
-```
-
-**引用 vs 指针：**
-
-| 特性 | 引用 | 指针 |
-|------|------|------|
-| 语法 | 简单（`.`） | 复杂（`->`, `*`） |
-| 空值 | 不能为空 | 可以为nullptr |
-| 重绑定 | 不可以 | 可以 |
-| 初始化 | 必须 | 可选 |
-| 安全性 | 更安全 | 较危险 |
-| 推荐 | ✅ 优先使用 | 必要时使用 |
-
----
-
-## 第14章 类型转换
-
-C++提供了四种类型转换运算符，比C风格的强制转换更安全、更明确。
-
-### 14.1 static_cast
-
-**完整示例 - 动态内存分配：**
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "=== 动态内存管理示例 ===" << std::endl;
-
-    // 分配单个对象
-    int* ptr = new int(42);
-    std::cout << "动态分配的值: " << *ptr << std::endl;
-    std::cout << "地址: " << ptr << std::endl;
-
-    // 修改值
-    *ptr = 100;
-    std::cout << "修改后的值: " << *ptr << std::endl;
-
-    // 释放内存
-    delete ptr;
-    ptr = nullptr;  // 最佳实践：避免悬空指针
-
-    // 分配数组
-    std::cout << "\n动态数组:" << std::endl;
-    int size = 5;
-    int* arr = new int[size];
-
-    // 初始化数组
-    for (int i = 0; i < size; i++) {
-        arr[i] = (i + 1) * 10;
-    }
-
-    // 打印数组
-    std::cout << "数组内容: ";
-    for (int i = 0; i < size; i++) {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << std::endl;
-
-    // 释放数组（注意使用delete[]）
-    delete[] arr;
-    arr = nullptr;
-
-    // 动态分配对象
-    std::cout << "\n动态分配对象:" << std::endl;
-    class Point {
-    public:
-        int x, y;
-        Point(int x, int y) : x(x), y(y) {
-            std::cout << "Point(" << x << ", " << y << ") 构造" << std::endl;
-        }
-        ~Point() {
-            std::cout << "Point(" << x << ", " << y << ") 析构" << std::endl;
-        }
-    };
-
-    Point* p = new Point(10, 20);
-    std::cout << "坐标: (" << p->x << ", " << p->y << ")" << std::endl;
-    delete p;
-
-    return 0;
-}
-```
-
-### 11.2 内存泄漏
-
-**完整示例 - 内存泄漏和正确做法：**
-
-```cpp
-#include <iostream>
-
-// 错误：内存泄漏
-void badFunction() {
-    int* ptr = new int(42);
-    std::cout << "分配了内存，但忘记释放！" << std::endl;
-    // 忘记delete，内存永远不会被释放
-    // 这是内存泄漏！
-}
-
-// 正确：释放内存
-void goodFunction() {
-    int* ptr = new int(42);
-    std::cout << "分配了内存: " << *ptr << std::endl;
-    delete ptr;  // 正确释放
-    std::cout << "内存已释放" << std::endl;
-}
-
-// 错误：重复释放
-void doubleFree() {
-    int* ptr = new int(42);
-    delete ptr;
-    // delete ptr;  // 危险！重复释放
-}
-
-// 错误：使用已释放的内存
-void useAfterFree() {
-    int* ptr = new int(42);
-    delete ptr;
-    // std::cout << *ptr << std::endl;  // 危险！使用已释放的内存
-}
-
-// 正确：使用智能指针（C++11）
-#include <memory>
-
-void smartPointerExample() {
-    std::unique_ptr<int> ptr(new int(42));
-    std::cout << "智能指针值: " << *ptr << std::endl;
-    // 自动释放，无需delete
-}
-
-int main() {
-    std::cout << "=== 内存泄漏示例 ===" << std::endl;
-
-    std::cout << "\n错误示例（会泄漏）:" << std::endl;
-    badFunction();
-
-    std::cout << "\n正确示例:" << std::endl;
-    goodFunction();
-
-    std::cout << "\n智能指针示例:" << std::endl;
-    smartPointerExample();
-
-    return 0;
-}
-```
-
-**常见内存错误：**
-
-- ❌ 内存泄漏：分配后忘记释放
-- ❌ 重复释放：对同一指针多次delete
-- ❌ 使用已释放的内存：delete后继续使用
-- ❌ 数组使用错误的delete：`delete arr`而不是`delete[] arr`
-- ✅ 使用智能指针避免手动管理内存
-
----
-
-### 11.3 智能指针（现代C++）
-
-智能指针自动管理内存，避免内存泄漏和悬空指针问题。
-
-**完整示例 - 智能指针：**
-
-```cpp
-#include <iostream>
-#include <memory>
-#include <string>
-
-class Person {
+class Point {
 public:
-    std::string name;
-    int age;
-
-    Person(std::string n, int a) : name(n), age(a) {
-        std::cout << "Person " << name << " 创建" << std::endl;
-    }
-
-    ~Person() {
-        std::cout << "Person " << name << " 销毁" << std::endl;
-    }
-
-    void introduce() {
-        std::cout << "我是 " << name << "，" << age << " 岁" << std::endl;
-    }
+    int x, y;
+    // 构造函数，用于初始化成员
+    Point(int x, int y) : x(x), y(y) {}
 };
 
 int main() {
-    std::cout << "=== 智能指针示例 ===" << std::endl;
-
-    // unique_ptr：独占所有权
-    std::cout << "\n1. unique_ptr（独占所有权）:" << std::endl;
-    {
-        std::unique_ptr<Person> p1(new Person("Alice", 25));
-        // 更好的方式（C++14）
-        auto p2 = std::make_unique<Person>("Bob", 30);
-
-        p1->introduce();
-        p2->introduce();
-
-        // unique_ptr不能复制
-        // std::unique_ptr<Person> p3 = p1;  // 错误！
-
-        // 但可以移动
-        std::unique_ptr<Person> p3 = std::move(p1);
-        if (p1 == nullptr) {
-            std::cout << "p1 现在为空" << std::endl;
-        }
-        p3->introduce();
-
-    }  // 离开作用域，自动释放内存
-
-    // shared_ptr：共享所有权
-    std::cout << "\n2. shared_ptr（共享所有权）:" << std::endl;
-    {
-        std::shared_ptr<Person> sp1 = std::make_shared<Person>("Charlie", 35);
-        std::cout << "引用计数: " << sp1.use_count() << std::endl;
-
-        {
-            std::shared_ptr<Person> sp2 = sp1;  // 共享所有权
-            std::cout << "引用计数: " << sp1.use_count() << std::endl;
-            sp2->introduce();
-        }  // sp2销毁，但对象还在
-
-        std::cout << "引用计数: " << sp1.use_count() << std::endl;
-        sp1->introduce();
-
-    }  // sp1销毁，引用计数为0，对象被释放
-
-    // weak_ptr：弱引用
-    std::cout << "\n3. weak_ptr（弱引用）:" << std::endl;
-    {
-        std::shared_ptr<Person> sp = std::make_shared<Person>("David", 40);
-        std::weak_ptr<Person> wp = sp;  // 不增加引用计数
-
-        std::cout << "shared_ptr引用计数: " << sp.use_count() << std::endl;
-
-        if (auto locked = wp.lock()) {  // 尝试获取shared_ptr
-            locked->introduce();
-        }
-    }
-
-    std::cout << "\n程序结束" << std::endl;
+    Point p(1, 2);  // 调用构造函数
+    std::cout << p.x << "," << p.y << std::endl;  // 输出 1,2
     return 0;
 }
 ```
 
-**预期输出：**
 
-```
-=== 智能指针示例 ===
-
-1. unique_ptr（独占所有权）:
-Person Alice 创建
-Person Bob 创建
-我是 Alice，25 岁
-我是 Bob，30 岁
-p1 现在为空
-我是 Alice，25 岁
-Person Alice 销毁
-Person Bob 销毁
-
-2. shared_ptr（共享所有权）:
-Person Charlie 创建
-引用计数: 1
-引用计数: 2
-我是 Charlie，35 岁
-引用计数: 1
-我是 Charlie，35 岁
-Person Charlie 销毁
-
-3. weak_ptr（弱引用）:
-Person David 创建
-shared_ptr引用计数: 1
-我是 David，40 岁
-Person David 销毁
-
-程序结束
-```
-
-**智能指针对比：**
-
-| 类型 | 所有权 | 可复制 | 引用计数 | 使用场景 |
-|------|--------|--------|----------|----------|
-| `unique_ptr` | 独占 | 否（可移动） | 否 | 单一所有者 |
-| `shared_ptr` | 共享 | 是 | 是 | 多个所有者 |
-| `weak_ptr` | 无 | 是 | 否 | 避免循环引用 |
-
-**最佳实践：**
-
-- ✅ 优先使用智能指针而不是原始指针
-- ✅ 优先使用`unique_ptr`，需要共享时使用`shared_ptr`
-- ✅ 使用`make_unique`和`make_shared`创建智能指针
-- ✅ 使用`weak_ptr`打破循环引用
-- ❌ 避免混用智能指针和原始指针
-
-
-
-构造函数在创建对象时自动调用，用于初始化对象的成员变量。
-
-**完整示例 - 构造函数类型：**
-
-```cpp
-#include <iostream>
-#include <string>
-
-class Student {
-private:
-    std::string name;
-    int age;
-    double gpa;
-
-public:
-    // 1. 默认构造函数
-    Student() : name("Unknown"), age(0), gpa(0.0) {
-        std::cout << "默认构造函数调用" << std::endl;
-    }
-
-    // 2. 带参数构造函数
-    Student(std::string n, int a) : name(n), age(a), gpa(0.0) {
-        std::cout << "带参数构造函数调用: " << name << std::endl;
-    }
-
-    // 3. 完整参数构造函数
-    Student(std::string n, int a, double g) : name(n), age(a), gpa(g) {
-        std::cout << "完整构造函数调用: " << name << std::endl;
-    }
-
-    // 4. 拷贝构造函数
-    Student(const Student& other) : name(other.name), age(other.age), gpa(other.gpa) {
-        std::cout << "拷贝构造函数调用: " << name << std::endl;
-    }
-
-    void display() const {
-        std::cout << "  姓名: " << name << ", 年龄: " << age << ", GPA: " << gpa << std::endl;
-    }
-};
-
-int main() {
-    std::cout << "=== 构造函数示例 ===" << std::endl;
-
-    Student s1;  // 调用默认构造函数
-    s1.display();
-
-    std::cout << std::endl;
-    Student s2("Alice", 20);  // 调用带参数构造函数
-    s2.display();
-
-    std::cout << std::endl;
-    Student s3("Bob", 21, 3.8);  // 调用完整构造函数
-    s3.display();
-
-    std::cout << std::endl;
-    Student s4 = s3;  // 调用拷贝构造函数
-    s4.display();
-
-    return 0;
-}
-```
-
-**预期输出：**
-
-```
-=== 构造函数示例 ===
-默认构造函数调用
-  姓名: Unknown, 年龄: 0, GPA: 0
-
-带参数构造函数调用: Alice
-  姓名: Alice, 年龄: 20, GPA: 0
-
-完整构造函数调用: Bob
-  姓名: Bob, 年龄: 21, GPA: 3.8
-
-拷贝构造函数调用: Bob
-  姓名: Bob, 年龄: 21, GPA: 3.8
-```
-
-### 12.2 析构函数
+### 11.2 析构函数
 
 析构函数在对象销毁时自动调用，用于清理资源（如释放内存、关闭文件等）。
 
@@ -5111,7 +4178,7 @@ Resource '动态资源' 销毁，内存已释放
 程序结束
 ```
 
-### 12.3 初始化列表
+### 11.3 初始化列表
 
 初始化列表是初始化成员变量的推荐方式，比在构造函数体内赋值更高效。
 
@@ -5131,13 +4198,6 @@ public:
     Point(int i, double x_val, double y_val) : id(i), x(x_val), y(y_val) {
         std::cout << "Point " << id << " 创建于 (" << x << ", " << y << ")" << std::endl;
     }
-
-    // 不使用初始化列表（不推荐，且const成员无法这样初始化）
-    // Point(int i, double x_val, double y_val) {
-    //     id = i;  // 错误！const成员不能赋值
-    //     x = x_val;
-    //     y = y_val;
-    // }
 
     void display() const {
         std::cout << "Point " << id << ": (" << x << ", " << y << ")" << std::endl;
@@ -5192,28 +4252,605 @@ Point 2: (0, 10)
 Point 3: (20, 0)
 ```
 
-**初始化列表的优势：**
 
-- ✅ 更高效（直接初始化，而不是先默认构造再赋值）
-- ✅ 必须用于const成员
-- ✅ 必须用于引用成员
-- ✅ 必须用于没有默认构造函数的成员对象
-- ✅ 初始化顺序与声明顺序一致
+## 第12章 拷贝语义
+
+拷贝语义定义了对象如何被复制。理解浅拷贝和深拷贝对于管理动态内存至关重要。
+
+### 12.1 浅拷贝 vs 深拷贝
+
+**完整示例 - 浅拷贝问题：**
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+class ShallowString {
+private:
+    char* data;
+
+public:
+    ShallowString(const char* str) {
+        data = new char[strlen(str) + 1];
+        strcpy(data, str);
+        std::cout << "构造: " << data << std::endl;
+    }
+
+    // 使用默认拷贝构造函数（浅拷贝）
+    // ShallowString(const ShallowString& other) = default;
+
+    ~ShallowString() {
+        std::cout << "析构: " << data << std::endl;
+        delete[] data;
+    }
+
+    void print() const {
+        std::cout << "数据: " << data << std::endl;
+    }
+};
+
+void demonstrateShallowCopy() {
+    std::cout << "=== 浅拷贝问题 ===" << std::endl;
+    ShallowString s1("Hello");
+    // ShallowString s2 = s1;  // 浅拷贝！两个对象共享同一个data指针
+    // 当s1和s2销毁时，会尝试两次delete同一块内存！（崩溃）
+}
+
+int main() {
+    demonstrateShallowCopy();
+    return 0;
+}
+```
+
+**完整示例 - 深拷贝解决方案：**
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+class DeepString {
+private:
+    char* data;
+    int length;
+
+public:
+    // 构造函数
+    DeepString(const char* str) {
+        length = strlen(str);
+        data = new char[length + 1];
+        strcpy(data, str);
+        std::cout << "构造: '" << data << "'" << std::endl;
+    }
+
+    // 拷贝构造函数（深拷贝）
+    DeepString(const DeepString& other) {
+        length = other.length;
+        data = new char[length + 1];  // 分配新内存
+        strcpy(data, other.data);     // 复制数据
+        std::cout << "拷贝构造: '" << data << "'" << std::endl;
+    }
+
+    // 拷贝赋值运算符（深拷贝）
+    DeepString& operator=(const DeepString& other) {
+        std::cout << "拷贝赋值: '" << other.data << "'" << std::endl;
+
+        if (this != &other) {  // 检查自赋值
+            delete[] data;  // 释放旧内存
+
+            length = other.length;
+            data = new char[length + 1];  // 分配新内存
+            strcpy(data, other.data);     // 复制数据
+        }
+        return *this;
+    }
+
+    // 析构函数
+    ~DeepString() {
+        std::cout << "析构: '" << data << "'" << std::endl;
+        delete[] data;
+    }
+
+    void print() const {
+        std::cout << "数据: '" << data << "', 长度: " << length << std::endl;
+    }
+
+    void modify(char newChar) {
+        if (length > 0) {
+            data[0] = newChar;
+        }
+    }
+};
+
+int main() {
+    std::cout << "=== 深拷贝示例 ===" << std::endl;
+
+    DeepString s1("Hello");
+    s1.print();
+
+    std::cout << "\n拷贝构造:" << std::endl;
+    DeepString s2 = s1;  // 调用拷贝构造函数
+    s2.print();
+
+    std::cout << "\n修改s2:" << std::endl;
+    s2.modify('J');
+    s1.print();  // s1不受影响
+    s2.print();  // s2被修改
+
+    std::cout << "\n拷贝赋值:" << std::endl;
+    DeepString s3("World");
+    s3 = s1;  // 调用拷贝赋值运算符
+    s3.print();
+
+    std::cout << "\n程序结束，对象将被销毁:" << std::endl;
+    return 0;
+}
+```
+
+**预期输出：**
+
+```
+=== 深拷贝示例 ===
+构造: 'Hello'
+数据: 'Hello', 长度: 5
+
+拷贝构造:
+拷贝构造: 'Hello'
+数据: 'Hello', 长度: 5
+
+修改s2:
+数据: 'Hello', 长度: 5
+数据: 'Jello', 长度: 5
+
+拷贝赋值:
+构造: 'World'
+拷贝赋值: 'Hello'
+数据: 'Hello', 长度: 5
+
+程序结束，对象将被销毁:
+析构: 'Hello'
+析构: 'Jello'
+析构: 'Hello'
+```
+
+### 12.2 三法则（Rule of Three）
+
+如果一个类需要自定义以下任何一个，通常需要自定义全部三个：
+
+1. 析构函数
+2. 拷贝构造函数
+3. 拷贝赋值运算符
+
+**完整示例 - 三法则：**
+
+```cpp
+#include <iostream>
+#include <cstring>
+
+class DynamicArray {
+private:
+    int* data;
+    int size;
+
+public:
+    // 1. 构造函数
+    DynamicArray(int s) : size(s) {
+        data = new int[size];
+        for (int i = 0; i < size; i++) {
+            data[i] = 0;
+        }
+        std::cout << "构造函数: 创建大小为 " << size << " 的数组" << std::endl;
+    }
+
+    // 2. 析构函数
+    ~DynamicArray() {
+        std::cout << "析构函数: 释放大小为 " << size << " 的数组" << std::endl;
+        delete[] data;
+    }
+
+    // 3. 拷贝构造函数（深拷贝）
+    DynamicArray(const DynamicArray& other) : size(other.size) {
+        data = new int[size];
+        for (int i = 0; i < size; i++) {
+            data[i] = other.data[i];
+        }
+        std::cout << "拷贝构造函数: 复制大小为 " << size << " 的数组" << std::endl;
+    }
+
+    // 4. 拷贝赋值运算符（深拷贝）
+    DynamicArray& operator=(const DynamicArray& other) {
+        std::cout << "拷贝赋值运算符" << std::endl;
+
+        if (this != &other) {  // 防止自赋值
+            // 释放旧资源
+            delete[] data;
+
+            // 分配新资源
+            size = other.size;
+            data = new int[size];
+
+            // 复制数据
+            for (int i = 0; i < size; i++) {
+                data[i] = other.data[i];
+            }
+        }
+        return *this;
+    }
+
+    void set(int index, int value) {
+        if (index >= 0 && index < size) {
+            data[index] = value;
+        }
+    }
+
+    int get(int index) const {
+        if (index >= 0 && index < size) {
+            return data[index];
+        }
+        return -1;
+    }
+
+    void print() const {
+        std::cout << "数组: [";
+        for (int i = 0; i < size; i++) {
+            std::cout << data[i];
+            if (i < size - 1) std::cout << ", ";
+        }
+        std::cout << "]" << std::endl;
+    }
+};
+
+int main() {
+    std::cout << "=== 三法则示例 ===" << std::endl;
+
+    DynamicArray arr1(5);
+    arr1.set(0, 10);
+    arr1.set(1, 20);
+    arr1.set(2, 30);
+    arr1.print();
+
+    std::cout << "\n拷贝构造:" << std::endl;
+    DynamicArray arr2 = arr1;
+    arr2.print();
+
+    std::cout << "\n修改arr2:" << std::endl;
+    arr2.set(0, 99);
+    arr1.print();  // arr1不受影响
+    arr2.print();
+
+    std::cout << "\n拷贝赋值:" << std::endl;
+    DynamicArray arr3(3);
+    arr3 = arr1;
+    arr3.print();
+
+    std::cout << "\n程序结束:" << std::endl;
+    return 0;
+}
+```
+
+**预期输出：**
+
+```
+=== 三法则示例 ===
+构造函数: 创建大小为 5 的数组
+数组: [10, 20, 30, 0, 0]
+
+拷贝构造:
+拷贝构造函数: 复制大小为 5 的数组
+数组: [10, 20, 30, 0, 0]
+
+修改arr2:
+数组: [10, 20, 30, 0, 0]
+数组: [99, 20, 30, 0, 0]
+
+拷贝赋值:
+构造函数: 创建大小为 3 的数组
+拷贝赋值运算符
+数组: [10, 20, 30, 0, 0]
+
+程序结束:
+析构函数: 释放大小为 5 的数组
+析构函数: 释放大小为 5 的数组
+析构函数: 释放大小为 5 的数组
+```
+
+**浅拷贝 vs 深拷贝对比：**
+
+| 特性 | 浅拷贝 | 深拷贝 |
+|------|--------|--------|
+| 指针复制 | 复制指针值 | 复制指针指向的数据 |
+| 内存 | 共享同一块内存 | 各自独立的内存 |
+| 修改影响 | 互相影响 | 互不影响 |
+| 析构问题 | 重复释放（崩溃） | 各自释放（安全） |
+| 默认行为 | 是 | 否（需手动实现） |
 
 **最佳实践：**
 
-- ✅ 总是使用初始化列表初始化成员变量
-- ✅ 初始化列表的顺序应与成员声明顺序一致
-- ✅ 在析构函数中释放所有分配的资源
-- ✅ 遵循RAII原则（资源获取即初始化）
+- ✅ 遵循三法则：定义析构函数时，也定义拷贝构造和拷贝赋值
+- ✅ 在拷贝赋值中检查自赋值
+- ✅ 使用智能指针避免手动内存管理
+- ✅ C++11后考虑五法则（增加移动构造和移动赋值）
+- ❌ 不要依赖默认拷贝行为处理动态内存
 
 ---
 
-## 第15章 内联函数
+## 第13章 动态内存管理
 
-内联函数是C++的一种优化机制，可以减少函数调用开销。
+动态内存管理允许程序在运行时分配和释放内存，提供了更大的灵活性。
 
-### 15.1 什么是内联函数？
+### 13.1 new和delete
+
+`new`和`delete`运算符用于在堆上动态分配和释放内存。
+
+**完整示例 - 动态内存分配：**
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "=== 动态内存分配示例 ===" << std::endl;
+
+    // 分配单个整数
+    int* ptr = new int;  // 分配内存
+    *ptr = 42;           // 赋值
+    std::cout << "动态分配的整数: " << *ptr << std::endl;
+    delete ptr;          // 释放内存
+
+    // 分配并初始化
+    int* ptr2 = new int(100);
+    std::cout << "初始化的整数: " << *ptr2 << std::endl;
+    delete ptr2;
+
+    // 分配数组
+    int size = 5;
+    int* arr = new int[size];  // 分配数组
+    for (int i = 0; i < size; i++) {
+        arr[i] = i * 10;
+    }
+
+    std::cout << "\n动态数组: ";
+    for (int i = 0; i < size; i++) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+
+    delete[] arr;  // 释放数组（注意使用delete[]）
+
+    // 分配对象
+    class Point {
+    public:
+        int x, y;
+        Point(int x, int y) : x(x), y(y) {
+            std::cout << "Point构造: (" << x << ", " << y << ")" << std::endl;
+        }
+        ~Point() {
+            std::cout << "Point析构: (" << x << ", " << y << ")" << std::endl;
+        }
+    };
+
+    Point* p = new Point(10, 20);
+    std::cout << "Point: (" << p->x << ", " << p->y << ")" << std::endl;
+    delete p;
+
+    return 0;
+}
+```
+
+**预期输出：**
+
+```
+=== 动态内存分配示例 ===
+动态分配的整数: 42
+初始化的整数: 100
+
+动态数组: 0 10 20 30 40
+Point构造: (10, 20)
+Point: (10, 20)
+Point析构: (10, 20)
+```
+
+### 13.2 内存泄漏
+
+内存泄漏发生在分配的内存没有被正确释放时。
+
+**完整示例 - 内存泄漏和正确做法：**
+
+```cpp
+#include <iostream>
+
+// 错误：内存泄漏
+void memoryLeak() {
+    int* ptr = new int(42);
+    std::cout << "分配内存: " << *ptr << std::endl;
+    // 忘记delete！内存泄漏
+}
+
+// 正确：释放内存
+void noLeak() {
+    int* ptr = new int(42);
+    std::cout << "分配内存: " << *ptr << std::endl;
+    delete ptr;  // 正确释放
+    std::cout << "内存已释放" << std::endl;
+}
+
+// 错误：循环中的内存泄漏
+void leakInLoop() {
+    for (int i = 0; i < 5; i++) {
+        int* ptr = new int(i);
+        // 每次循环都分配新内存，但从不释放
+    }
+    // 泄漏了5个int的内存
+}
+
+// 正确：在循环中正确管理内存
+void noLeakInLoop() {
+    for (int i = 0; i < 5; i++) {
+        int* ptr = new int(i);
+        std::cout << *ptr << " ";
+        delete ptr;  // 每次循环都释放
+    }
+    std::cout << std::endl;
+}
+
+int main() {
+    std::cout << "=== 内存泄漏示例 ===" << std::endl;
+
+    std::cout << "\n正确的内存管理:" << std::endl;
+    noLeak();
+
+    std::cout << "\n循环中的正确做法:" << std::endl;
+    noLeakInLoop();
+
+    // memoryLeak();  // 不要调用，会泄漏内存
+    // leakInLoop();  // 不要调用，会泄漏内存
+
+    return 0;
+}
+```
+
+**常见内存错误：**
+
+1. **内存泄漏**：分配后忘记释放
+2. **重复释放**：对同一指针多次delete
+3. **悬空指针**：使用已释放的内存
+4. **数组释放错误**：用delete释放new[]分配的数组
+
+### 13.3 智能指针
+
+智能指针自动管理内存，避免内存泄漏和悬空指针问题。
+
+**完整示例 - 智能指针：**
+
+```cpp
+#include <iostream>
+#include <memory>
+#include <string>
+
+class Person {
+public:
+    std::string name;
+    Person(std::string n) : name(n) {
+        std::cout << "Person '" << name << "' 创建" << std::endl;
+    }
+    ~Person() {
+        std::cout << "Person '" << name << "' 销毁" << std::endl;
+    }
+};
+
+int main() {
+    std::cout << "=== 智能指针示例 ===" << std::endl;
+
+    // 1. unique_ptr - 独占所有权
+    std::cout << "\n1. unique_ptr（独占所有权）:" << std::endl;
+    {
+        std::unique_ptr<Person> p1(new Person("Alice"));
+        // 或使用make_unique（C++14）
+        auto p2 = std::make_unique<Person>("Bob");
+
+        std::cout << "p1: " << p1->name << std::endl;
+        std::cout << "p2: " << p2->name << std::endl;
+
+        // unique_ptr不能复制
+        // std::unique_ptr<Person> p3 = p1;  // 错误！
+
+        // 但可以移动
+        std::unique_ptr<Person> p3 = std::move(p1);
+        std::cout << "p3: " << p3->name << std::endl;
+        // p1现在为空
+
+    }  // 离开作用域，自动delete
+
+    // 2. shared_ptr - 共享所有权
+    std::cout << "\n2. shared_ptr（共享所有权）:" << std::endl;
+    {
+        std::shared_ptr<Person> s1 = std::make_shared<Person>("Charlie");
+        std::cout << "引用计数: " << s1.use_count() << std::endl;
+
+        {
+            std::shared_ptr<Person> s2 = s1;  // 可以复制
+            std::cout << "引用计数: " << s1.use_count() << std::endl;
+            std::cout << "s1: " << s1->name << std::endl;
+            std::cout << "s2: " << s2->name << std::endl;
+        }  // s2销毁，引用计数减1
+
+        std::cout << "引用计数: " << s1.use_count() << std::endl;
+    }  // s1销毁，引用计数为0，对象被delete
+
+    // 3. weak_ptr - 弱引用
+    std::cout << "\n3. weak_ptr（弱引用）:" << std::endl;
+    {
+        std::shared_ptr<Person> s1 = std::make_shared<Person>("David");
+        std::weak_ptr<Person> w1 = s1;  // 弱引用，不增加引用计数
+
+        std::cout << "shared_ptr引用计数: " << s1.use_count() << std::endl;
+
+        if (auto temp = w1.lock()) {  // 尝试获取shared_ptr
+            std::cout << "对象仍然存在: " << temp->name << std::endl;
+        }
+    }
+
+    std::cout << "\n程序结束" << std::endl;
+    return 0;
+}
+```
+
+**预期输出：**
+
+```
+=== 智能指针示例 ===
+
+1. unique_ptr（独占所有权）:
+Person 'Alice' 创建
+Person 'Bob' 创建
+p1: Alice
+p2: Bob
+p3: Alice
+Person 'Bob' 销毁
+Person 'Alice' 销毁
+
+2. shared_ptr（共享所有权）:
+Person 'Charlie' 创建
+引用计数: 1
+引用计数: 2
+s1: Charlie
+s2: Charlie
+引用计数: 1
+Person 'Charlie' 销毁
+
+3. weak_ptr（弱引用）:
+Person 'David' 创建
+shared_ptr引用计数: 1
+对象仍然存在: David
+Person 'David' 销毁
+
+程序结束
+```
+
+**智能指针选择指南：**
+
+| 智能指针 | 使用场景 |
+|---------|---------|
+| `unique_ptr` | 独占所有权，最常用 |
+| `shared_ptr` | 需要共享所有权时 |
+| `weak_ptr` | 打破循环引用 |
+
+**最佳实践：**
+
+- ✅ 优先使用`unique_ptr`
+- ✅ 使用`make_unique`和`make_shared`
+- ✅ 使用`weak_ptr`打破循环引用
+- ❌ 避免混用智能指针和原始指针
+| 重绑定 | 不可以 | 可以 |
+| 初始化 | 必须 | 可选 |
+| 安全性 | 更安全 | 较危险 |
+| 推荐 | ✅ 优先使用 | 必要时使用 |
+
+---
+
+## 第14章 类型转换
+
+C++提供了四种类型转换运算符，比C风格的强制转换更安全、更明确。
+
+### 14.1 static_cast
 
 `static_cast`用于编译时已知的类型转换，是最常用的转换方式。
 
@@ -5228,33 +4865,35 @@ int main() {
     // 1. 基本类型转换
     std::cout << "\n1. 基本类型转换:" << std::endl;
     int i = 10;
-    float f = static_cast<float>(i);
-    std::cout << "int " << i << " -> float " << f << std::endl;
+    double d = static_cast<double>(i);  // int转double
+    std::cout << "int: " << i << " -> double: " << d << std::endl;
 
-    // 2. float转int（精度损失）
-    float pi = 3.14159;
-    int n = static_cast<int>(pi);
-    std::cout << "float " << pi << " -> int " << n << " (精度损失)" << std::endl;
+    double pi = 3.14159;
+    int truncated = static_cast<int>(pi);  // double转int（截断）
+    std::cout << "double: " << pi << " -> int: " << truncated << std::endl;
 
-    // 3. 指针转换
-    std::cout << "\n2. 指针转换:" << std::endl;
-    int x = 42;
-    void* vptr = &x;  // int* -> void*
-    int* iptr = static_cast<int*>(vptr);  // void* -> int*
-    std::cout << "原始值: " << x << std::endl;
-    std::cout << "通过void*转换后: " << *iptr << std::endl;
+    // 2. 指针类型转换（相关类型）
+    std::cout << "\n2. 指针类型转换:" << std::endl;
+    int num = 42;
+    void* voidPtr = &num;  // int*隐式转换为void*
+    int* intPtr = static_cast<int*>(voidPtr);  // void*转回int*
+    std::cout << "通过void*转换: " << *intPtr << std::endl;
 
-    // 4. 向上转换（安全）
-    std::cout << "\n3. 向上转换:" << std::endl;
-    double d = 3.14;
-    int i2 = static_cast<int>(d);
-    std::cout << "double " << d << " -> int " << i2 << std::endl;
+    // 3. 类层次结构中的向上转换（安全）
+    std::cout << "\n3. 类层次结构转换:" << std::endl;
+    class Base {
+    public:
+        virtual void show() { std::cout << "Base" << std::endl; }
+    };
 
-    // 5. 枚举转换
-    enum Color { RED = 0, GREEN = 1, BLUE = 2 };
-    int colorValue = static_cast<int>(GREEN);
-    std::cout << "\n4. 枚举转换:" << std::endl;
-    std::cout << "GREEN 枚举值: " << colorValue << std::endl;
+    class Derived : public Base {
+    public:
+        void show() override { std::cout << "Derived" << std::endl; }
+    };
+
+    Derived d_obj;
+    Base* basePtr = static_cast<Base*>(&d_obj);  // 向上转换（安全）
+    basePtr->show();
 
     return 0;
 }
@@ -5266,18 +4905,14 @@ int main() {
 === static_cast 示例 ===
 
 1. 基本类型转换:
-int 10 -> float 10
-float 3.14159 -> int 3 (精度损失)
+int: 10 -> double: 10
+double: 3.14159 -> int: 3
 
-2. 指针转换:
-原始值: 42
-通过void*转换后: 42
+2. 指针类型转换:
+通过void*转换: 42
 
-3. 向上转换:
-double 3.14 -> int 3
-
-4. 枚举转换:
-GREEN 枚举值: 1
+3. 类层次结构转换:
+Derived
 ```
 
 ### 14.2 dynamic_cast
@@ -5294,73 +4929,57 @@ class Animal {
 public:
     std::string name;
     Animal(std::string n) : name(n) {}
-    virtual ~Animal() {}  // 必须有虚函数才能使用dynamic_cast
-    virtual void makeSound() {
-        std::cout << name << " 发出声音" << std::endl;
-    }
+    virtual ~Animal() {}  // 需要虚析构函数才能使用dynamic_cast
+    virtual void speak() { std::cout << "Some sound" << std::endl; }
 };
 
 class Dog : public Animal {
 public:
     Dog(std::string n) : Animal(n) {}
-    void makeSound() override {
-        std::cout << name << " 汪汪！" << std::endl;
-    }
-    void fetch() {
-        std::cout << name << " 去捡球" << std::endl;
-    }
+    void speak() override { std::cout << name << ": Woof!" << std::endl; }
+    void fetch() { std::cout << name << " is fetching!" << std::endl; }
 };
 
 class Cat : public Animal {
 public:
     Cat(std::string n) : Animal(n) {}
-    void makeSound() override {
-        std::cout << name << " 喵喵！" << std::endl;
-    }
-    void climb() {
-        std::cout << name << " 爬树" << std::endl;
-    }
+    void speak() override { std::cout << name << ": Meow!" << std::endl; }
+    void climb() { std::cout << name << " is climbing!" << std::endl; }
 };
 
 int main() {
     std::cout << "=== dynamic_cast 示例 ===" << std::endl;
 
-    // 创建对象
-    Animal* animal1 = new Dog("旺财");
-    Animal* animal2 = new Cat("咪咪");
+    Dog dog("Buddy");
+    Cat cat("Whiskers");
 
-    // 尝试向下转换为Dog
+    Animal* animal1 = &dog;
+    Animal* animal2 = &cat;
+
+    // 尝试向下转换
     std::cout << "\n尝试将animal1转换为Dog:" << std::endl;
-    Dog* dog1 = dynamic_cast<Dog*>(animal1);
-    if (dog1 != nullptr) {
+    Dog* dogPtr = dynamic_cast<Dog*>(animal1);
+    if (dogPtr) {
         std::cout << "转换成功！" << std::endl;
-        dog1->fetch();
+        dogPtr->fetch();
     } else {
         std::cout << "转换失败" << std::endl;
     }
 
-    // 尝试将Cat错误地转换为Dog
-    std::cout << "\n尝试将animal2（实际是Cat）转换为Dog:" << std::endl;
-    Dog* dog2 = dynamic_cast<Dog*>(animal2);
-    if (dog2 != nullptr) {
-        std::cout << "转换成功" << std::endl;
-        dog2->fetch();
+    std::cout << "\n尝试将animal2转换为Dog:" << std::endl;
+    Dog* dogPtr2 = dynamic_cast<Dog*>(animal2);
+    if (dogPtr2) {
+        std::cout << "转换成功！" << std::endl;
     } else {
-        std::cout << "转换失败！（这是正确的，因为Cat不是Dog）" << std::endl;
+        std::cout << "转换失败（animal2实际是Cat）" << std::endl;
     }
 
-    // 正确转换为Cat
     std::cout << "\n尝试将animal2转换为Cat:" << std::endl;
-    Cat* cat = dynamic_cast<Cat*>(animal2);
-    if (cat != nullptr) {
+    Cat* catPtr = dynamic_cast<Cat*>(animal2);
+    if (catPtr) {
         std::cout << "转换成功！" << std::endl;
-        cat->climb();
-    } else {
-        std::cout << "转换失败" << std::endl;
+        catPtr->climb();
     }
-
-    delete animal1;
-    delete animal2;
 
     return 0;
 }
@@ -5373,14 +4992,14 @@ int main() {
 
 尝试将animal1转换为Dog:
 转换成功！
-旺财 去捡球
+Buddy is fetching!
 
-尝试将animal2（实际是Cat）转换为Dog:
-转换失败！（这是正确的，因为Cat不是Dog）
+尝试将animal2转换为Dog:
+转换失败（animal2实际是Cat）
 
 尝试将animal2转换为Cat:
 转换成功！
-咪咪 爬树
+Whiskers is climbing!
 ```
 
 ### 14.3 const_cast
@@ -5393,33 +5012,28 @@ int main() {
 #include <iostream>
 #include <cstring>
 
-// 旧的C风格API，不接受const参数
-void legacyFunction(char* str) {
+void processString(char* str) {
+    // 旧式API，需要非const指针
     std::cout << "处理字符串: " << str << std::endl;
-}
-
-// 现代函数，使用const
-void printString(const char* str) {
-    // 需要调用旧API，但我们保证不会修改数据
-    char* nonConstStr = const_cast<char*>(str);
-    legacyFunction(nonConstStr);
 }
 
 int main() {
     std::cout << "=== const_cast 示例 ===" << std::endl;
 
-    const char* message = "Hello, World!";
-    printString(message);
+    const char* constStr = "Hello, World!";
 
-    // 危险示例（不要这样做！）
-    const int x = 10;
-    std::cout << "\n原始const值: " << x << std::endl;
+    // 移除const（危险！仅用于与旧API交互）
+    char* nonConstStr = const_cast<char*>(constStr);
+    processString(nonConstStr);
 
-    // 移除const并尝试修改（未定义行为！）
-    // int* ptr = const_cast<int*>(&x);
-    // *ptr = 20;  // 危险！可能崩溃或产生未定义行为
+    // 注意：修改原本const的数据是未定义行为！
+    // nonConstStr[0] = 'h';  // 危险！可能崩溃
 
-    std::cout << "\n警告: 不要使用const_cast修改真正的const变量！" << std::endl;
+    // 更安全的做法：复制到可修改的缓冲区
+    char buffer[50];
+    strcpy(buffer, constStr);
+    buffer[0] = 'h';
+    std::cout << "修改后: " << buffer << std::endl;
 
     return 0;
 }
@@ -5430,13 +5044,8 @@ int main() {
 ```
 === const_cast 示例 ===
 处理字符串: Hello, World!
-
-原始const值: 10
-
-警告: 不要使用const_cast修改真正的const变量！
+修改后: hello, World!
 ```
-
-**警告**：避免使用const_cast移除const来修改数据。这通常表示设计有问题。
 
 ### 14.4 reinterpret_cast
 
@@ -5451,29 +5060,23 @@ int main() {
 int main() {
     std::cout << "=== reinterpret_cast 示例 ===" << std::endl;
 
-    // 1. 指针转换为整数
-    int x = 42;
-    int* ptr = &x;
+    int num = 42;
+    int* ptr = &num;
 
+    // 将指针转换为整数（查看地址）
+    std::uintptr_t addr = reinterpret_cast<std::uintptr_t>(ptr);
     std::cout << "指针地址: " << ptr << std::endl;
-    uintptr_t addr = reinterpret_cast<uintptr_t>(ptr);
     std::cout << "地址的整数表示: " << addr << std::endl;
 
-    // 2. 整数转换回指针
+    // 将整数转换回指针
     int* ptr2 = reinterpret_cast<int*>(addr);
-    std::cout << "转换回的指针: " << ptr2 << std::endl;
+    std::cout << "转换回指针: " << ptr2 << std::endl;
     std::cout << "值: " << *ptr2 << std::endl;
 
-    // 3. 不同类型指针之间的转换（危险！）
+    // 危险用法：重新解释内存
     double d = 3.14159;
-    double* dptr = &d;
-
-    // 将double*重新解释为int*（不推荐！）
-    int* iptr = reinterpret_cast<int*>(dptr);
-    std::cout << "\ndouble值: " << d << std::endl;
-    std::cout << "重新解释为int: " << *iptr << " (无意义的值)" << std::endl;
-
-    std::cout << "\n警告: reinterpret_cast非常危险，应避免使用！" << std::endl;
+    long long* llPtr = reinterpret_cast<long long*>(&d);
+    std::cout << "\ndouble的位模式（作为long long）: " << *llPtr << std::endl;
 
     return 0;
 }
@@ -5485,16 +5088,11 @@ int main() {
 === reinterpret_cast 示例 ===
 指针地址: 0x7ffc8b2a3c4c
 地址的整数表示: 140722635234380
-转换回的指针: 0x7ffc8b2a3c4c
+转换回指针: 0x7ffc8b2a3c4c
 值: 42
 
-double值: 3.14159
-重新解释为int: 1374389535 (无意义的值)
-
-警告: reinterpret_cast非常危险，应避免使用！
+double的位模式（作为long long）: 4614256656552045848
 ```
-
-**警告**：`reinterpret_cast`非常危险，几乎总是有更好的替代方案。
 
 ### 14.5 转换选择指南
 
@@ -5502,47 +5100,124 @@ double值: 3.14159
 
 ```cpp
 #include <iostream>
+#include <string>
+
+class Student {
+private:
+    std::string name;
+    int age;
+    double gpa;
+
+public:
+    // 1. 默认构造函数
+    Student() : name("Unknown"), age(0), gpa(0.0) {
+        std::cout << "默认构造函数调用" << std::endl;
+    }
+
+    // 2. 带参数构造函数
+    Student(std::string n, int a) : name(n), age(a), gpa(0.0) {
+        std::cout << "带参数构造函数调用: " << name << std::endl;
+    }
+
+    // 3. 完整参数构造函数
+    Student(std::string n, int a, double g) : name(n), age(a), gpa(g) {
+        std::cout << "完整构造函数调用: " << name << std::endl;
+    }
+
+    // 4. 拷贝构造函数
+    Student(const Student& other) : name(other.name), age(other.age), gpa(other.gpa) {
+        std::cout << "拷贝构造函数调用: " << name << std::endl;
+    }
+
+    void display() const {
+        std::cout << "  姓名: " << name << ", 年龄: " << age << ", GPA: " << gpa << std::endl;
+    }
+};
 
 int main() {
-    std::cout << "=== 类型转换对比 ===" << std::endl;
+    std::cout << "=== 构造函数示例 ===" << std::endl;
 
-    // 1. static_cast - 常用，安全
-    double d = 3.14;
-    int i = static_cast<int>(d);
-    std::cout << "static_cast: " << d << " -> " << i << std::endl;
+    Student s1;  // 调用默认构造函数
+    s1.display();
 
-    // 2. C风格转换（不推荐）
-    int i2 = (int)d;
-    std::cout << "C风格转换: " << d << " -> " << i2 << std::endl;
+    std::cout << std::endl;
+    Student s2("Alice", 20);  // 调用带参数构造函数
+    s2.display();
 
-    // 3. 推荐使用C++风格转换
-    std::cout << "\n推荐: 使用static_cast等C++转换运算符" << std::endl;
-    std::cout << "原因: 更明确、更安全、更易搜索" << std::endl;
+    std::cout << std::endl;
+    Student s3("Bob", 21, 3.8);  // 调用完整构造函数
+    s3.display();
+
+    std::cout << std::endl;
+    Student s4 = s3;  // 调用拷贝构造函数
+    s4.display();
 
     return 0;
 }
 ```
 
-**类型转换对比表：**
+**预期输出：**
 
-| 转换类型 | 用途 | 安全性 | 运行时检查 | 推荐度 |
-|---------|------|--------|-----------|--------|
-| `static_cast` | 逻辑上合理的转换 | 高 | 否 | ✅ 常用 |
-| `dynamic_cast` | 继承层次向下转换 | 高 | 是 | ✅ 多态时使用 |
-| `const_cast` | 移除/添加const | 低 | 否 | ⚠️ 谨慎使用 |
-| `reinterpret_cast` | 低级位重新解释 | 极低 | 否 | ❌ 避免使用 |
-| C风格 `(type)` | 任意转换 | 低 | 否 | ❌ 不推荐 |
+```
+=== 构造函数示例 ===
+默认构造函数调用
+  姓名: Unknown, 年龄: 0, GPA: 0
 
-**最佳实践：**
+带参数构造函数调用: Alice
+  姓名: Alice, 年龄: 20, GPA: 0
 
-- ✅ 优先使用`static_cast`进行基本类型转换
-- ✅ 使用`dynamic_cast`进行安全的多态类型转换
-- ⚠️ 仅在必要时使用`const_cast`（如与旧API交互）
-- ❌ 避免使用`reinterpret_cast`
-- ❌ 避免使用C风格转换
-- ✅ 让编译器帮你检查类型安全
+完整构造函数调用: Bob
+  姓名: Bob, 年龄: 21, GPA: 3.8
 
----
+拷贝构造函数调用: Bob
+  姓名: Bob, 年龄: 21, GPA: 3.8
+```
+
+
+
+
+## 第15章 内联函数
+
+内联函数是C++的一种优化机制，可以减少函数调用开销。
+
+### 15.1 什么是内联函数？
+
+内联函数是对编译器的优化建议：在调用处直接展开函数体，以减少调用开销。是否真正内联由编译器决定。
+
+要点：
+- 在类内定义的成员函数天然是内联候选
+- 使用 inline 关键字表达意图，但不强制
+- 适用于体积小、逻辑简单、频繁调用的函数；递归/复杂控制流通常不会被内联
+
+**完整示例 - 内联自由函数与内联成员：**
+
+```cpp
+#include <iostream>
+
+inline int add(int a, int b) { return a + b; }
+
+struct Rect {
+    int w{0}, h{0};
+    inline int area() const { return w * h; } // 类内定义，内联候选
+};
+
+int main() {
+    std::cout << "=== 内联函数示例 ===\n";
+    std::cout << add(2, 3) << "\n"; // 5
+    Rect r{3, 4};
+    std::cout << r.area() << "\n";  // 12
+}
+```
+
+**何时使用内联：**
+- 小且频繁调用的工具函数（如访问器、简单计算）
+- 不要为追求“零开销”而滥用；现代编译器会自行做更优的决定
+
+
+
+
+
+
 
 ## 第16章 Lambda表达式
 
